@@ -49,3 +49,5 @@ traitlets==5.14.3
 typing_extensions==4.15.0
 tzdata==2025.3
 wcwidth==0.2.14
+pymongo==4.3.3
+python-dotenv==1.0.0
