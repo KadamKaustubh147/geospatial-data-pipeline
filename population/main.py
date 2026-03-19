@@ -50,4 +50,4 @@ def main(query: str):
 
 
 if __name__ == "__main__":
-    main("Sricity")
+    main("noida")

@@ -19,8 +19,9 @@ from decouple import config
 proxy = config("PROXY_SERVER")
 
 ddgs = DDGS(proxy=proxy)
+# ddgs = DDGS()
 
-query = "Seawoods"
+query = "noida"
 final_query = f"{query} geoiq"
 
 all_hits = []
@@ -29,8 +30,7 @@ for i in range(5):
     try:
         results = ddgs.text(
             final_query,
-            max_results=10,
-            backend="duckduckgo"
+            max_results=10
         )
     except Exception as e:
         print(e)
